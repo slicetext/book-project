@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap'); /*Titillium import*/
 *{
 	/*vars*/
-	--fg-color: blue;
-	--fg-color-heading: orange;
-	--bg-color: black;
-	--h1-font: "Orbitron";
+	--fg-color: #141413;
+	--fg-color-heading: #2b281f;
+	--bg-color: #e2e1de;
+	--accent-color: #ddb00d;
+	--alt-accent-color: #a58309;
+	--heading-font: "Orbitron";
 	--default-font: "Titillium Web", sans-serif;
 	/*default values*/
 	color: var(--fg-color);
@@ -17,29 +19,66 @@ html{
 	background-color: var(--bg-color);
 }
 
+/*Utility*/
+#center{
+	text-align: center;
+}
+
 /*Headings*/
 h1{
-	font-family: var(--h1-font), sans-serif;
+	font-family: var(--heading-font), sans-serif;
 	color: var(--fg-color-heading);
 }
 h2{
-	font-family: var(--h1-font), sans-serif;
+	font-family: var(--heading-font), sans-serif;
 	color: var(--fg-color-heading);
 }
 h3{
-	font-family: var(--h1-font), sans-serif;
+	font-family: var(--heading-font), sans-serif;
 	color: var(--fg-color-heading);
 }
 h4{
-	font-family: var(--h1-font), sans-serif;
+	font-family: var(--heading-font), sans-serif;
 	color: var(--fg-color-heading);
 }
 h5{
-	font-family: var(--h1-font), sans-serif;
+	font-family: var(--heading-font), sans-serif;
 	color: var(--fg-color-heading);
 }
 h6{
-	font-family: var(--h1-font), sans-serif;
+	font-family: var(--heading-font), sans-serif;
 	color: var(--fg-color-heading);
+}
+
+/*Links*/
+a{
+	color: var(--accent-color);
+	padding: 0px 4px;
+	text-decoration: none;
+}
+a:visited{
+	color: var(--alt-accent-color);
+}
+a:hover{
+	border-radius: 5px;
+	color: var(--bg-color);
+	padding: 0px 4px;
+	background-color: var(--accent-color);
+}
+a:active{
+	border-radius: 5px;
+	color: var(--bg-color);
+	padding: 0px 4px;
+	background-color: var(--alt-accent-color);
+}
+.button-link:link{
+	border-radius: 5px;
+	padding: 1em 2em;
+	text-decoration:none;
+	background-color: var(--accent-color);
+	color: var(--fg-color);
+}
+.button-link:hover{
+	background-color: var(--alt-accent-color);
 }
 
