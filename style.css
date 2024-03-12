@@ -11,7 +11,8 @@
 	--default-font: "Titillium Web", sans-serif;
 	/*default values*/
 	color: var(--fg-color);
-	font-family: var(--default-font)
+	font-family: var(--default-font);
+	margin: 0px;
 }
 
 html{
@@ -22,6 +23,9 @@ html{
 /*Utility*/
 #center{
 	text-align: center;
+}
+#abs{
+	position: absolute;
 }
 
 /*Headings*/
@@ -72,6 +76,7 @@ a:active{
 	background-color: var(--alt-accent-color);
 }
 .button-link:link{
+	margin-top: 5em;
 	border-radius: 5px;
 	padding: 1em 2em;
 	text-decoration:none;
@@ -82,3 +87,23 @@ a:active{
 	background-color: var(--alt-accent-color);
 }
 
+/*Navbar*/
+.navbar{
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #14140f;
+}
+.navbar a{
+	float: left;
+	display: block;
+	text-align: center;
+	margin: 5px;
+}
+
+/*Main Content*/
+.main{
+	margin: 10px;
+	margin-top: 40px;
+}
