@@ -102,6 +102,14 @@ a:active{
 	margin: 5px;
 }
 
+/*Paragraphs*/
+p{
+	margin:10px;
+}
+.small{
+	margin-left:20vw;
+	margin-right:20vw;
+}
 /*Main Content*/
 .main{
 	margin: 10px;
